@@ -1,0 +1,6 @@
+./arm-none-eabi-linux-as -o tarefa08.o tarefa08.s
+
+./arm-none-eabi-linux-ld -o tarefa08 -Tmapa.lds tarefa08.o
+
+./armsim -l tarefa08 -c -d dispositivos.txt
+
